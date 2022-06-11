@@ -240,7 +240,7 @@ section {
 }
 
 .benefits-macbook {
-    --accent-color: var(--color-redish)
+    --accent-color: var(--color-redish);
 }
 
 .benefits-macbook .benefits-img {
@@ -326,4 +326,144 @@ section {
     width: 295px;
     height: auto;
     margin-top: 55px;
+}
+
+
+
+.pricing {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pricing-title {
+    font-size: 2.25rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+.pricing-box {
+    width: 370px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing-details {
+    margin-top: 34px;
+    margin-bottom : 60px;
+    text-align: center;
+}
+
+.pricing-type {
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.pricing-price {
+    font-size: 2.875rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 14px;
+    color: var(--color-redish);
+}
+
+.pricing-time {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.75rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+
+.pricing-items {
+    text-align: center;
+    list-style-type: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    padding: 0
+}
+
+.pricing-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark-1.svg");
+}
+
+.pricing-item-no::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-box .pricing-btn {
+    position: relative;
+    padding: 16px 57px;
+    border-radius: 23px;
+    font-size: 0.8125rem;
+    bottom: -25px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.pricing-box .pricing-btn-big {
+    position: relative;
+    padding: 16px 65px;
+    border-radius: 23px;
+    font-size: 0.8125rem;
+    bottom: -25px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.pricing-box {
+    --accent-color: var(--color-redish);
+}
+
+.pricing-box-professional {
+    --accent-color: var(--color-primary);
+    width: 400px;
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--color-primary-shadow)
+}
+
+.pricing-box-professional .pricing-type {
+    font-size: 1.3125rem;
+}
+
+.pricing-box-professional .pricing-item {
+    margin-bottom: 25px;
+}
+
+.pricing-box-premium {
+    --accent-color: var(--color-green);
+}
+
+.pricing-box-basic .pricing-price {
+    margin-bottom: 29px;
 }
