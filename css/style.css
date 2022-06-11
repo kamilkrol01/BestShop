@@ -52,7 +52,7 @@ header .container {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 3.28px;
+    letter-spacing: 0.205rem;
     text-decoration: none;
     padding: 28px 18px 22px;
 }
@@ -60,4 +60,41 @@ header .container {
 .nav-direct:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
+}
+
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opening-section {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening-title {
+    font-size: 3.0625rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+.opening-description {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.opening-btn {
+    text-decoration: none;
+    padding: 22px 157px;
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: var(--color-white);
 }
