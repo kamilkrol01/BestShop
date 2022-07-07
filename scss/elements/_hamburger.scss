@@ -1,0 +1,81 @@
+/* menu icon */
+
+.mobile-menu {
+
+
+}
+
+.mobile-menu .menu-icon {
+  width: 58px;
+  height: 38px;
+
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 18px 20px;
+  position: relative;
+  user-select: none;
+
+  border-radius: 6px;
+}
+
+.mobile-menu .menu-icon .navicon {
+  background: $color-primary;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.mobile-menu .menu-icon .navicon:before,
+.mobile-menu .menu-icon .navicon:after {
+  background: $color-primary;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.mobile-menu .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.mobile-menu .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.mobile-menu .menu-btn {
+  display: none;
+}
+
+.mobile-menu .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.mobile-menu .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.mobile-menu .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.mobile-menu .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.mobile-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.mobile-menu .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 981px) {
+  .mobile-menu .menu-icon {
+    display: none;
+  }
+}

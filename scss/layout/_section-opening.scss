@@ -1,0 +1,51 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.opening-section {
+  margin-top: 130px;
+  text-align: center;
+}
+
+.opening-title {
+  font-size: 3.0625rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  @include phone {
+    font-size: 2.5rem;
+  }
+}
+
+.opening-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  @include phone {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+.opening-btn {
+  text-decoration: none;
+  padding: 22px 157px;
+  background-color: $color-primary;
+  border-radius: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: $color-white;
+  @include phone {
+    padding: 22px 90px;
+  }
+}
+
+.opening-background {
+  @include phone {
+    margin-top: 70px;
+    width: 200%;
+    transform: translateX(-26%);
+  }
+}
