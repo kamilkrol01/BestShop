@@ -18,6 +18,9 @@
 .footer-right-side {
   display: flex;
   align-items: center;
+  @include phone {
+    margin-right: 30px;
+  }
 }
 
 .footer-right-side img {

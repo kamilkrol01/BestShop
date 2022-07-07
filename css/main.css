@@ -485,6 +485,11 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 981px) {
+  section {
+    overflow: hidden;
+  }
+}
 
 .opening-section {
   margin-top: 130px;
@@ -841,7 +846,6 @@ section {
   border-radius: 50%;
   position: absolute;
   left: 0;
-  top: -20px;
 }
 @media (max-width: 981px) {
   .benefits-phone .benefits-img::before {
@@ -934,6 +938,7 @@ section {
   .pricing-boxes {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 25px;
   }
 }
 
@@ -1103,9 +1108,20 @@ section {
   justify-content: center;
   flex-direction: row;
 }
+@media (max-width: 981px) {
+  .contact {
+    flex-direction: column;
+    padding: 0 0 35px 35px;
+  }
+}
 
 .contact-column {
   width: 50%;
+}
+@media (max-width: 981px) {
+  .contact-column {
+    width: 85%;
+  }
 }
 
 .contact-title {
@@ -1127,6 +1143,13 @@ section {
   display: flex;
   color: #A5A5A5;
   align-items: center;
+}
+@media (max-width: 981px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 42px;
+  }
 }
 
 .contact-details img {
@@ -1259,6 +1282,11 @@ section {
 .footer-right-side {
   display: flex;
   align-items: center;
+}
+@media (max-width: 981px) {
+  .footer-right-side {
+    margin-right: 30px;
+  }
 }
 
 .footer-right-side img {
