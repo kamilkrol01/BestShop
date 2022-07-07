@@ -59,6 +59,9 @@
 
 .details-item:first-of-type {
   margin-right: 20px;
+  @include phone {
+    margin-bottom: 10px;
+  }
 }
 
 .form {
