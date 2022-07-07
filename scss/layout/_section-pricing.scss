@@ -4,6 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include phone {
+    margin: 50px auto;
+  }
 }
 
 .pricing-boxes {
@@ -11,6 +14,11 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+
+  @include phone {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .pricing-title {
@@ -26,12 +34,31 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--accent-color);
+
+  @include phone {
+    width: 100%;
+    max-width: 370px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 25px 10px 0 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .pricing-details {
   margin-top: 34px;
   margin-bottom : 60px;
   text-align: center;
+
+  @include phone {
+    width: 50%;
+    margin: 0;
+  }
 }
 
 .pricing-type {
@@ -62,7 +89,11 @@
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  padding: 0
+  padding: 0;
+
+  @include phone {
+    text-align: left;
+  }
 }
 
 .pricing-item {
@@ -117,7 +148,13 @@
   --accent-color: var(--color-primary);
   width: 400px;
   margin: 0 40px;
-  box-shadow: 5px 1px 27px var(--color-primary-shadow)
+  box-shadow: 5px 1px 27px var(--color-primary-shadow);
+
+  @include phone {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
 }
 
 .pricing-box-professional .pricing-type {
@@ -134,4 +171,7 @@
 
 .pricing-box-basic .pricing-price {
   margin-bottom: 29px;
+  @include phone {
+    margin-bottom: 0;
+  }
 }

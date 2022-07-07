@@ -12,10 +12,18 @@
 .benefits {
   background-color: var(--color-light-grey);
   padding: 100px 0;
+
+  @include phone {
+    padding: 50px 0;
+  }
 }
 
 .benefits .container {
   padding: 0 100px;
+
+  @include phone {
+    padding: 0 25px;
+  }
 }
 
 .benefits-single {
@@ -27,12 +35,23 @@
   align-items: flex-end;
   margin-bottom: 37px;
   border-radius: 5px;
+
+  @include phone {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 20px;
+  }
 }
 
 .benefits-text {
   box-sizing: content-box;
   max-width: 415px;
   margin: 91px 35px;
+
+  @include phone {
+    margin: 25px 0;
+    max-width: none;
+  }
 }
 
 .benefits-text::after {
@@ -41,19 +60,32 @@
   height: 4px;
   background-color: var(--color-redish);
   display: block;
-  margin-top: 50px
+  margin-top: 50px;
+
+  @include phone {
+    display: none;
+  }
 }
 
 .benefits-title {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 2.25rem;
+
+  @include phone {
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .benefits-description {
   line-height: 1.375rem;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
+  @include phone {
+    font-size: 0.9rem;
+  }
 }
 
 .benefits-img {
@@ -68,15 +100,29 @@
   width: 386px;
   height: auto;
   position: relative;
+
+  @include phone {
+    width: 192px;
+  }
 }
 
 .benefits-macbook {
   --accent-color: var(--color-redish);
+
+  @include phone {
+    .benefits__text {
+      margin: 30px 0;
+    }
+  }
 }
 
 .benefits-macbook .benefits-img {
   margin-right: 117px;
   margin-bottom: 38px;
+
+  @include phone {
+    margin: 40px 0 0;
+  }
 }
 
 .benefits-macbook .benefits-img::before {
@@ -90,18 +136,41 @@
   right:0;
   top: -40px;
   transform: rotate(45deg);
+
+  @include phone {
+    width: 90px;
+    height: 90px;
+    right: -10px;
+    top: -30px;
+  }
 }
 
 .benefits-phone {
   --accent-color: var(--color-primary);
   flex-direction: row-reverse;
   padding: 0 20px 0 70px;
+
+  @include phone {
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+
+  .benefits-img {
+    @include phone {
+      margin-top: 30px;
+    }
+  }
 }
 
 .benefits-phone .benefits-img img {
   width: 426px;
   height: auto;
   position: relative;
+
+  @include phone {
+    width: 175px;
+    top: 45px;
+  }
 }
 
 .benefits-text::after {
@@ -110,7 +179,11 @@
   height: 4px;
   background-color: var(--accent-color);
   display: block;
-  margin-top: 50px
+  margin-top: 50px;
+
+  @include phone {
+    display: none;
+  }
 }
 
 .benefits-phone .benefits-img::before {
@@ -123,24 +196,45 @@
   position: absolute;
   left: 0;
   top: -20px;
+
+  @include phone {
+    width: 151px;
+    height: 131px;
+    top: 35px;
+  }
 }
 
 .benefits-phone .benefits-text {
   margin: 70px 0;
+
+  @include phone {
+    margin: 30px 0;
+  }
 }
 
 .benefits-trumpet-object {
   --accent-color: var(--color-green);
   display: flex;
+
+  @include phone {
+    flex-direction: column;
+  }
 }
 
 .benefits-trumpet .benefits-text {
   margin: 70px 35px;
   max-width: none;
+  @include phone {
+    margin: 0 0 25px 0;
+  }
 }
 
 .benefits-trumpet {
   max-width: 620px;
+
+  @include phone {
+    max-width: none;
+  }
 }
 
 .benefits-single-img {
@@ -151,6 +245,11 @@
   background-color: var(--accent-color);
   border: 1px solid #E8E9ED;
   margin-left: 60px;
+
+  @include phone {
+    margin-left: 0;
+    margin-top: -38px;
+  }
 }
 
 .benefits-single-img img {
